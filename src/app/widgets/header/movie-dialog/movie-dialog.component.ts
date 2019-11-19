@@ -31,5 +31,8 @@ export class MovieDialogComponent {
     this.form.reset();
   }
 
-
+  secret() {
+    this.form.get('name').setValue('some movie ' + Date.now().toString());
+    this.form.get('imdb').setValue('https://yahadzohim.com/#/home');
+  }
 }

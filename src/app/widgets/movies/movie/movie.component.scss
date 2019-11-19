@@ -1,4 +1,6 @@
 :host {
+  position: relative;
+  display: inline-block;
   &>div {
     user-select: none;
     display: inline-block;
