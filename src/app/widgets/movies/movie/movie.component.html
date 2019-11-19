@@ -1,0 +1,12 @@
+<div [secBackgroundHandler]="color">
+
+  <label> {{movie.name}} </label>
+
+  <a [href]="movie.imdb" target="_blank">Go to imdb page</a>
+
+  <p-colorPicker
+    [ngModel]="color || '#ffffff'"
+    (onChange)="color = $event.value"
+    ></p-colorPicker>
+
+</div>

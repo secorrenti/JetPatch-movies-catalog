@@ -1,0 +1,39 @@
+:host {
+  &>div {
+    user-select: none;
+    display: inline-block;
+    width: 300px;
+    min-height: 160px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.26), 0 10px 10px rgba(0, 0, 0, 0.26);
+    margin: 30px;
+    padding: 30px;
+    vertical-align: top;
+    position: relative;
+  }
+
+  label {
+    font-weight: 600;
+    display: block;
+    text-shadow:
+    1px 1px 1px white,
+    -1px -1px 1px white,
+      -1px 1px 1px white;
+      font-size: 20px;
+  }
+
+  a {
+    padding: 10px 0;
+    display: inline-block;
+    color: blue;
+    text-shadow:
+      1px 1px 1px rgb(170, 170, 170),
+      -1px 1px 1px rgb(170, 170, 170);
+    text-decoration: underline;
+  }
+
+  p-colorPicker {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}

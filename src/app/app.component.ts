@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'sec-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <sec-header></sec-header>
+    <sec-movies></sec-movies>
+  `,
 })
 export class AppComponent {
-  title = 'movies-catalog';
+
+
 }

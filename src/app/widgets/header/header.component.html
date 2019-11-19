@@ -1,0 +1,16 @@
+<p-colorPicker
+  [ngModel]="color"
+  (onChange)="onChange($event.value)"
+  [inline]="true">
+</p-colorPicker>
+
+<button
+  type="button"
+  (click)="display = true"
+  pButton label="Add movie"
+></button>
+
+<p-dialog header="Add movie" [(visible)]="display" [modal]="true" >
+    <sec-movie-dialog (closeDialog)="display = false"></sec-movie-dialog>
+</p-dialog>
+

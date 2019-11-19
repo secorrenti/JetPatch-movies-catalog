@@ -1,0 +1,20 @@
+:host {
+  margin: 20px 0;
+  display: block;
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  input {
+    width: 400px;
+  }
+  p-button {
+    float: right;
+    margin: 20px 0;
+  }
+  span{
+    display: block;
+    margin: 5px 0;
+    color: red;
+  }
+}

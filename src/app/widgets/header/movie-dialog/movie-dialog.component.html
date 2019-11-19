@@ -1,0 +1,24 @@
+<form (ngSubmit)="addMovie()" [formGroup]="form">
+  <div>
+    <label>Name</label>
+    <input type="text" pInputText formControlName="name">
+    <span *ngIf="form.get('name').errors?.required && form.get('name').dirty">
+      field required!
+    </span>
+  </div>
+  <div>
+    <label (click)="addMovie()">imdb url</label>
+    <input type="url" pInputText formControlName="imdb">
+    <span *ngIf="form.get('imdb').errors?.required && form.get('imdb').dirty">
+      field required!
+    </span>
+    <span *ngIf="form.get('imdb').errors?.pattern && form.get('imdb').dirty">
+      A valid url required
+    </span>
+
+  </div>
+  <div>
+    <p-button type="submit" label="Add movie" [disabled]="form.invalid"></p-button>
+  </div>
+
+</form>
