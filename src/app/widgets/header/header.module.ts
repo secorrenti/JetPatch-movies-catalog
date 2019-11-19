@@ -4,12 +4,12 @@ import { HeaderComponent } from './header.component';
 import { ShareModule } from './../../../shared/share.module';
 
 
-const _exports = [
+const exportsFiles = [
   HeaderComponent,
 ];
 
 const declarations = [
-  ..._exports,
+  ...exportsFiles,
   MovieDialogComponent,
 ];
 
@@ -18,5 +18,5 @@ const imports = [
 ];
 
 
-@NgModule({ declarations, imports, exports: _exports })
+@NgModule({ declarations, imports, exports: exportsFiles })
 export class HeaderModule { }

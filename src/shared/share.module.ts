@@ -11,7 +11,7 @@ const declarations = [
 ];
 
 
-const exports = [
+const exportsFiles = [
   PrimeNgModule,
   CommonModule,
   FormsModule,
@@ -20,13 +20,13 @@ const exports = [
 
 
 const imports = [
-  ...exports,
+  ...exportsFiles,
 ];
 
 
 @NgModule({
   declarations, imports,
-  exports: [...exports, ...declarations] })
+  exports: [...exportsFiles, ...declarations] })
 export class ShareModule { }
 
 

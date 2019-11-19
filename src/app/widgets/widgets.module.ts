@@ -5,12 +5,12 @@ import { MovieComponent } from './movies/movie/movie.component';
 import { ShareModule } from './../../shared/share.module';
 
 
-const exports = [
+const exportsFiles = [
   MoviesComponent,
 ];
 
 const declarations = [
-  ...exports,
+  ...exportsFiles,
   MovieComponent,
 ];
 
@@ -24,5 +24,5 @@ const providers = [
 ];
 
 
-@NgModule({ declarations, imports, exports, providers })
+@NgModule({ declarations, imports, exports: exportsFiles, providers })
 export class WidgetsModule { }
