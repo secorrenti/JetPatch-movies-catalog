@@ -1,7 +1,7 @@
 
 
 import { Directive, Renderer2, ElementRef, Input, OnDestroy } from '@angular/core';
-import { ConfigurationService } from 'src/app/configuration.service';
+import { ConfigurationService } from '../../app/configuration.service';
 import { Subscription } from 'rxjs';
 
 @Directive({

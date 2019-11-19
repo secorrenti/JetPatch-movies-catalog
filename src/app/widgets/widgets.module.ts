@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { MoviesService } from './movies/movies.service';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movies/movie/movie.component';
-import { ShareModule } from 'src/shared/share.module';
+import { ShareModule } from './../../shared/share.module';
 
 
 const exports = [

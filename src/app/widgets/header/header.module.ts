@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { MovieDialogComponent } from './movie-dialog/movie-dialog.component';
 import { HeaderComponent } from './header.component';
-import { ShareModule } from 'src/shared/share.module';
+import { ShareModule } from './../../../shared/share.module';
 
 
 const exports = [
