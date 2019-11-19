@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { MoviesService } from './movies.service';
 import { MovieModel } from './movie/movie.model';
 
@@ -8,7 +8,7 @@ import { MovieModel } from './movie/movie.model';
   <sec-movie
     [movie]="movie"
     *ngFor="let movie of movies">
-  </sec-movie>`,
+  </sec-movie>`
 })
 export class MoviesComponent {
 

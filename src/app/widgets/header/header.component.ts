@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { ConfigurationService } from 'src/app/configuration.service';
+import { ConfigurationService } from './../../configuration.service';
 
 @Component({
   selector: 'sec-header',

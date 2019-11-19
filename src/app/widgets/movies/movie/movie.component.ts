@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, AfterViewInit, ChangeDetectorRef, Input } from '@angular/core';
 import { MovieModel } from './movie.model';
 
 @Component({
@@ -7,10 +7,18 @@ import { MovieModel } from './movie.model';
   styleUrls: ['./movie.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MovieComponent {
+export class MovieComponent implements AfterViewInit {
 
   @Input() movie: MovieModel;
   color: string;
+
+  constructor(
+    private detector: ChangeDetectorRef,
+  ) {}
+
+  ngAfterViewInit(): void {
+    this.detector.markForCheck();
+  }
 
 }
 
