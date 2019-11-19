@@ -5,7 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ColorPickerModule } from 'primeng/colorpicker';
 
 
-const exports = [
+const exportsFiles = [
   DialogModule,
   ButtonModule,
   InputTextModule,
@@ -13,11 +13,11 @@ const exports = [
 ];
 
 const imports = [
-  ...exports,
+  ...exportsFiles,
 ];
 
 
-@NgModule({ imports, exports })
+@NgModule({ imports, exports: exportsFiles })
 export class PrimeNgModule { }
 
 
